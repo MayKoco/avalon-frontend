@@ -20,6 +20,8 @@ NEXT_PUBLIC_API_URL=http://192.168.1.25:4000
 
 Open `http://<LAN-IP>:3000` on each phone. The lobby QR uses the browser's current origin so it points other players to the same host.
 
+For solo QA, the host can enable **Test Mode** in the lobby. The backend fills empty seats with labeled Bots and the host can move through phases with the test-advance control. This option appears only when the backend allows Test Mode.
+
 ## Verification
 
 ```bash

@@ -25,6 +25,7 @@ Build a polished Thai-first, mobile-first PWA client for a real 5–10 player LA
 
 ## Core Application and Connectivity
 
+- [x] Add a host-only Test Mode toggle, Bot labels, and an in-game test-advance control.
 - [x] Implement persistent player rejoin-token storage without persisting secret role data.
 - [x] Implement connected/disconnected and actionable error states.
 - [x] Request an authoritative sync after reconnect and restore the correct screen/action state.
