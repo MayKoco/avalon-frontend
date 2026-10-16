@@ -31,6 +31,7 @@ Build a polished Thai-first, mobile-first PWA client for a real 5–10 player LA
 - [x] Request an authoritative sync after reconnect and restore the correct screen/action state.
 - [x] Prevent duplicate submissions through server state and show pending/confirmed feedback.
 - [x] Hide secret information when the document loses visibility or focus.
+- [x] Implement lobby leave, host removal, host transfer, and real-time presence refresh.
 
 ## Screens and Game Flow
 
@@ -51,6 +52,7 @@ Build a polished Thai-first, mobile-first PWA client for a real 5–10 player LA
 - [ ] Assassination Discussion: three-success context and protected Merlin identity.
 - [ ] Assassin Decision: assassin-only target selection, confirmation, timeout policy, and spectator state.
 - [ ] Game Over: distinct Good/Evil cinematics, all roles, quest history, voting history, duration, replay, and new-game actions.
+- [x] Implement the functional play-again action that retains human players and returns them to the lobby.
 
 ## Shared Phase UX
 

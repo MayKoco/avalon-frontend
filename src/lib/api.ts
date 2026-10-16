@@ -13,5 +13,6 @@ export const api = {
   create: (nickname: string) => request<{code:string;playerId:string;rejoinToken:string}>('/rooms', { method: 'POST', body: JSON.stringify({ nickname }) }),
   join: (code: string, nickname: string) => request<{code:string;playerId:string;rejoinToken:string}>('/rooms/join', { method: 'POST', body: JSON.stringify({ code, nickname }) }),
   lobby: (code:string, token:string) => request<any>(`/rooms/${code}?token=${encodeURIComponent(token)}`),
+  leave: (code:string, token:string) => request<{roomDeleted:boolean;playerRemoved:boolean;disconnected:boolean}>(`/rooms/${code}/leave`, { method: 'POST', body: JSON.stringify({ token }) }),
   action: (code:string, path:string, token:string, payload:Record<string,unknown>={}) => request<Snapshot>(`/rooms/${code}/${path}`, { method: 'POST', body: JSON.stringify({ token, ...payload }) }),
 };

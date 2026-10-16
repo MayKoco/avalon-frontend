@@ -22,6 +22,8 @@ Open `http://<LAN-IP>:3000` on each phone. The lobby QR uses the browser's curre
 
 For solo QA, the host can enable **Test Mode** in the lobby. The backend fills empty seats with labeled Bots and the host can move through phases with the test-advance control. This option appears only when the backend allows Test Mode.
 
+Lobby changes, player presence, and game state updates are synchronized over typed Socket.IO events even when an action is submitted through REST. Players can leave before a game, the host can remove lobby players, and the host can return the retained human group to the lobby with **เล่นอีกครั้ง** after a completed game.
+
 ## Verification
 
 ```bash
