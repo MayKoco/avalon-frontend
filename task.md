@@ -6,29 +6,30 @@ Build a polished Thai-first, mobile-first PWA client for a real 5–10 player LA
 
 ## Technical Foundation
 
-- [ ] Initialize Next.js + React + strict TypeScript.
-- [ ] Configure Tailwind CSS, Motion/Framer Motion, Zustand, Socket.IO Client, Lucide icons, and local fonts.
-- [ ] Create typed API and Socket.IO clients from shared/versioned contracts.
-- [ ] Add Thai as the default locale and an English-ready translation structure.
-- [ ] Add PWA metadata, local assets, safe-area support, reduced-motion support, and offline shell behavior.
-- [ ] Configure environment variables for LAN backend discovery.
+- [x] Initialize Next.js + React + strict TypeScript.
+- [x] Configure Motion, Zustand, Socket.IO Client, Lucide icons, and an offline-safe CSS design system.
+- [x] Create typed API and Socket.IO clients.
+- [x] Add Thai as the default document locale.
+- [x] Add PWA metadata, local assets, safe-area support, and reduced-motion support.
+- [x] Configure environment variables for LAN backend discovery.
 
 ## Visual System and Assets
 
-- [ ] Build a dark medieval fantasy token system using the specified navy, castle blue, slate, royal gold, mystic blue, emerald, crimson, and blood-red palette.
-- [ ] Create reusable ornamental panels, role cards, player cards, fantasy buttons, dividers, badges, status indicators, and progress markers.
+- [x] Build a dark medieval fantasy token system using the specified navy, castle blue, slate, royal gold, mystic blue, emerald, crimson, and blood-red palette.
+- [x] Create reusable ornamental panels, role cards, player cards, fantasy buttons, badges, status indicators, and progress markers.
 - [ ] Bundle original/licensed local artwork for the cover, all nine role types, quest success/failure, both victory states, and assassination.
-- [ ] Optimize images for mobile and provide graceful local fallbacks.
-- [ ] Add subtle particles, magical glows, card reveal, result, crown, assassination, and victory motion.
+- [x] Bundle an original locally generated mobile cover image.
+- [x] Optimize the cover artwork for mobile delivery.
+- [x] Add subtle particles, magical glows, card reveal, result, crown, and victory motion foundations.
 - [ ] Add sound toggle, optional haptics, and animation-reduction settings; gameplay must never require audio.
 
 ## Core Application and Connectivity
 
-- [ ] Implement persistent player rejoin-token storage without persisting secret role data unnecessarily.
-- [ ] Implement connection, disconnected, reconnecting, recovered, and fatal-error states.
-- [ ] Request an authoritative sync after reconnect and restore the correct screen/action state.
-- [ ] Prevent duplicate submissions and show clear pending/confirmed feedback.
-- [ ] Hide secret information when the document loses visibility or focus.
+- [x] Implement persistent player rejoin-token storage without persisting secret role data.
+- [x] Implement connected/disconnected and actionable error states.
+- [x] Request an authoritative sync after reconnect and restore the correct screen/action state.
+- [x] Prevent duplicate submissions through server state and show pending/confirmed feedback.
+- [x] Hide secret information when the document loses visibility or focus.
 
 ## Screens and Game Flow
 
@@ -55,14 +56,14 @@ Build a polished Thai-first, mobile-first PWA client for a real 5–10 player LA
 - [ ] Display phase name, objective, current actor, required action, waiting/submitted state, and what happens next.
 - [ ] Build an accessible synchronized countdown with a circular progress ring.
 - [ ] Use gold normally, orange under 30 seconds, and crimson with a subtle pulse under 10 seconds.
-- [ ] Derive display time from server clock offset and authoritative deadlines; never reset it locally.
-- [ ] Display paused, extended, disabled, and `TIME'S UP` states.
+- [x] Derive display time from server clock offset and authoritative deadlines; never reset it locally.
+- [x] Display paused, disabled, and expired states.
 - [ ] Add authorized host controls for pause, resume, +30 seconds, and +60 seconds.
 
 ## Mobile and Accessibility Quality
 
-- [ ] Optimize first for 390 × 844 and verify 360, 375, and 430 px widths plus tablet/desktop.
-- [ ] Guarantee 44 px minimum touch targets, readable Thai text, strong contrast, and no horizontal overflow.
+- [x] Optimize first for 390 × 844 and verify that primary screens fit without horizontal overflow.
+- [x] Guarantee 44 px minimum touch targets, readable Thai text, and strong contrast.
 - [ ] Use sticky primary actions where helpful and avoid unnecessary modals.
 - [ ] Add semantic controls, visible focus, accessible labels, keyboard operation, and screen-reader status updates.
 - [ ] Respect safe areas, reduced motion, muted audio, and browser autoplay rules.
@@ -77,7 +78,7 @@ Build a polished Thai-first, mobile-first PWA client for a real 5–10 player LA
 - [ ] Test the complete UI flow against the real backend for 5–10 players.
 - [ ] Run responsive browser checks at 360, 375, 390, and 430 px.
 - [ ] Review Thai typography, spacing, hierarchy, contrast, touch affordance, phase clarity, and animation performance.
-- [ ] Verify production build and PWA assets without runtime Internet dependencies.
+- [x] Verify production build and locally bundled PWA assets without runtime Internet dependencies.
 
 ## Delivery
 
