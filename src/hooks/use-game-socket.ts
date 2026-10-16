@@ -13,6 +13,7 @@ export function useGameSocket() {
     socket.on('connect', () => { setConnected(true); sync(); });
     socket.on('disconnect', () => setConnected(false));
     socket.on('game:phase_changed', sync);
+    socket.on('room:presence_changed', sync);
     return () => { socket.disconnect(); };
   }, [code, token, setConnected, setError, setSnapshot]);
 }
